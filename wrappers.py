@@ -19,8 +19,11 @@ from gym import spaces
 from gym.wrappers import ClipAction, TimeLimit
 import numpy as np
 
-from envs.env_dict import ALL_V2_ENVIRONMENTS_GOAL_HIDDEN, ALL_V2_ENVIRONMENTS_GOAL_OBSERVABLE
-from envs.factors.utils import make_env_with_factors
+from factor_world.envs.env_dict import (
+    ALL_V2_ENVIRONMENTS_GOAL_HIDDEN,
+    ALL_V2_ENVIRONMENTS_GOAL_OBSERVABLE,
+)
+from factor_world.envs.factors.utils import make_env_with_factors
 
 
 class MetaWorldState(gym.ObservationWrapper):

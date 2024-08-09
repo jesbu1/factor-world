@@ -14,7 +14,7 @@
 
 from wrappers import make_wrapped_env
 from wrappers import MetaWorldState
-from third_party.metaworld.metaworld import policies
+from factor_world.third_party.metaworld.metaworld import policies
 from replay_buffer import ReplayBufferStorage
 import os
 
