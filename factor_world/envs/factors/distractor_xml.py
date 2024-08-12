@@ -71,10 +71,16 @@ class DistractorXmlWrapper(XmlWrapper):
                         n=(object_ids_range[1] - object_ids_range[0]),
                     ),
                     "size": spaces.Box(
-                        low=size_range[0], high=size_range[1], dtype=np.float32
+                        low=size_range[0],
+                        high=size_range[1],
+                        dtype=np.float32,
+                        shape=(1,),
                     ),
                     "theta": spaces.Box(
-                        low=theta_range[0], high=theta_range[1], dtype=np.float32
+                        low=theta_range[0],
+                        high=theta_range[1],
+                        dtype=np.float32,
+                        shape=(1,),
                     ),
                 },
                 seed=seed,
